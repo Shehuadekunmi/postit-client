@@ -1,0 +1,10 @@
+export {default as Homepage} from './Homepage'
+export {default as Register} from './Register'
+export {default as Create} from './Create'
+export {default as Edit} from './Edit'
+export {default as Error} from './Error'
+export {default as Login} from './Login'
+export {default as Mystories} from './Mystories'
+export {default as SingleStory} from './SingleStory';
+export {default as Welcome} from './Welcome'
+export {default as AllStories} from './AllStories';

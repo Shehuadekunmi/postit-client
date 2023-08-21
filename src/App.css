@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.img{
+    width: 100%;
+}
+.img img{
+    width: 100%;
+}
+.wel{
+    background: #F5F6F8;
+}
+
+
+
+
+@media (min-width:1024px) {
+    .wel p{
+        width: 540px;
+        font-family: Open Sans;
+font-size: 20px;
+font-weight: 400;
+    }
+}

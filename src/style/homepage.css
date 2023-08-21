@@ -1,0 +1,101 @@
+.stay-text{
+    background-image: url('../assets/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 316px;
+}
+
+.one{
+    border: 0.5px solid #BBBBBB;
+ 
+}
+/* .lifestyle{
+    border: none;
+    background: #E5BF5E;
+    border-radius: 5px;
+} */
+.life p{
+font-size: 14px;
+font-family: 'Open Sans', sans-serif;
+font-weight: 400;
+}
+
+.two{
+    background-image: url('../assets/bg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.two input{
+    border: none;
+    background: #FFFBFB;
+   border-top-left-radius: 4px;
+   border-bottom-left-radius: 4px;
+}
+.two input::placeholder{
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.two button{
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 14px;
+    height: 27px;
+}
+
+@media (min-width:768px) {
+.two, .one {
+        width: 90%;
+    margin: 0 auto;
+    }
+
+    .stay-text p{
+        width: 400px;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .one p{
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        width: 217px;
+        height: 51px;
+    }
+}
+
+@media (min-width:1440px) {
+    .stay-text h1{
+        margin-top: 20px;
+        margin-left: 70px;
+    }
+    .stay-text p{
+        margin-left: 70px;
+        font-size: 20px;
+        width: 550px;
+    }
+    .stay-text button{
+        margin-left: 70px;
+    }
+    .one{
+        height: 150px;
+    }
+
+    .life{
+        width: 300px;
+        margin-right: 30p;
+    }
+    .two input::placeholder{
+        font-size: 16px;
+    }
+    .two input{
+        width: 300px;
+        height: 40px;
+    }
+    .two button{
+        width: 130px;
+        height: 43px;
+    }
+}

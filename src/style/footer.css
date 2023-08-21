@@ -1,0 +1,42 @@
+.footer{
+    background: #292929;
+}
+li{
+    list-style-type: none;
+}
+
+li:hover{
+    cursor: pointer;
+    padding-right: 2rem;
+}
+.sub h3{
+    font-size: 18px;
+}
+.sub button{
+    height: 25px;
+    background: #0086B0;
+color: white;
+font-size: 12px;
+position: relative;
+left: 150px;
+top: -33px;
+border: none;
+}
+.sub input{
+    width: 250px;
+    height: 40px;
+}
+
+
+@media (min-width:768px) {
+    .sub button{
+        left: -100px;
+        top: 0px;
+    }
+}
+
+@media (min-width:1024px) {
+    .footer .pp{
+        width: 450px;
+    }
+}
