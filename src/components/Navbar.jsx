@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import post from '../assets/Postit 1.png'
 import nav from '../assets/nav.png'
 
-const Header = ({ t1, t2, t3 }) => {
+const Header = ({ t1, t2, t3, t4 }) => {
   return (
     <div>
       <Navbar expand="lg" className="bg-white border-bottom border-2  head">
@@ -31,7 +31,13 @@ const Header = ({ t1, t2, t3 }) => {
 
                 {t2 && (
                   <Link to="/register">
-                    <button className="btn btn-primary">{t2}</button>
+                    <button className="button">{t2}</button>
+                  </Link>
+                )}
+
+                {t4 && (
+                  <Link to="/">
+                    <button className="button">{t4}</button>
                   </Link>
                 )}
 

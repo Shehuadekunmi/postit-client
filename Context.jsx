@@ -1,7 +1,7 @@
 import { useContext, createContext } from "react";
 const AppContext = createContext();
 export const useGlobalContext = () => useContext(AppContext);
-const baseURL = "https://kunmi-api.onrender.com";
+const baseURL = "https://kunmi-api.onrender.com/api/v1";
 
 const AppProvider = ({children}) => {
     return(

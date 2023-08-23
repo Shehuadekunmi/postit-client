@@ -2,12 +2,13 @@ import { useState } from 'react'
 import './App.css' 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Homepage, AllStories, Create, Edit, Error, Login, Mystories, Register, Welcome, SingleStory} from './pages'
-
+import { Toaster } from 'react-hot-toast'
 function App() {
 
 
   return (
     <>
+    <Toaster/>
     <Router>
       <Routes>
         <Route path='/' element={<Homepage/>}/>

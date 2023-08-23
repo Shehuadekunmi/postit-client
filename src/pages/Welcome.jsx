@@ -25,9 +25,9 @@ const Welcome = () => {
   return (
     <div>
       <Navbar t3={"Logout"} />
-      <section  className=" wel d-md-flex  pt-md-5 ps-2 justify-content-evenly ps-md-5">
+      <section  className=" wel d-md-flex  pt-5  pt-md-5 ps-3 justify-content-evenly ps-md-5">
       <div className='ps-md-5'>
-        <h1>Welcome {user},</h1>
+        <h1 className='fw-bold'>Welcome {user},</h1>
         <p>Lorem ipsum dolor sit ameetur adipiscing elit. Coctetur
 egestas massa velit aliquam. Molestim bibendum 
 hnt ipsum orci, platea aliquam id ut. </p>

@@ -1,0 +1,22 @@
+.all{
+    width: 100%;
+}
+
+@media (min-width:768px) {
+    .all .pd{
+        width: 100%;
+    }
+    .all{
+        width: 50%;
+    }
+}
+
+@media (min-width:1440px) {
+    .all{
+        width: 25%;
+    }
+
+    .all p{
+        font-size: 26px;
+    }
+}

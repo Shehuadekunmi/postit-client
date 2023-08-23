@@ -6,6 +6,7 @@ import tech from '../assets/tech.png'
 import postit from '../assets/Postit 1.png'
 import '../style/homepage.css'
 import Footer from '../components/Footer'
+import { Link } from 'react-router-dom'
 
 
 const Homepage = () => {
@@ -18,11 +19,13 @@ const Homepage = () => {
         <p>Lorem ipsum dolor sit ameetur adipiscing elit. Coctetur
           egestas massa velit aliquam. Molestim bibendum
           hnt ipsum orci, platea aliquam id ut. </p>
-        <button className="btn btn-primary">Get Started</button>
+          <Link to="/register">
+                    <button className=" button">Get started</button>
+                  </Link>
       </div>
 
-      <section className="one d-flex flex-wrap justify-content-center justify-content-lg-evenly gap-5 my-3 my-lg-5 ">
-        <div className="life d-flex justify-content-between gap-2 mt-3 mx-2 gap-md-3">
+      <section className="one d-flex flex-wrap justify-content-center gap- my-3 my-lg-5  ">
+        <div className="life d-flex justify-content-between gap-2 mt-5 mx-2 gap-md-3">
           <div className="img"><img src={life} alt="" /></div>
           <div className="text">
             <button className='lifestyle btn btn-warning'>Lifestyle</button>
@@ -30,7 +33,7 @@ const Homepage = () => {
           </div>
         </div>
 
-        <div className="life d-flex justify-content-between gap-2 mt-3 mx-2 gap-md-3">
+        <div className="life d-flex justify-content-between gap-2 mt-5 mx-2 gap-md-3">
           <div className="img"><img src={natu} alt="" /></div>
           <div className="text">
             <button className='btn btn-success'>Nature</button>
@@ -38,7 +41,7 @@ const Homepage = () => {
           </div>
         </div>
 
-        <div className="life d-flex justify-content-between gap-2 mt-3 mx-2 gap-md-3 mb-3 me-lg-5">
+        <div className="life d-flex justify-content-between gap-2 mt-5 mx-2 gap-md-3 mb-2 me-lg-">
           <div className="img"><img src={tech} alt="" /></div>
           <div className="text">
             <button className='btn btn-primary'>Technology</button>
@@ -49,10 +52,12 @@ const Homepage = () => {
 
       <section className="two text-center  py-4 ">
         <h2 className='fw-bold '>Try <img src={postit} alt="" /></h2>
-        <p>Do you want to write or discover stories from writers on any topic?</p>
+        <p className='px-2'>Do you want to write or discover stories from writers on any topic?</p>
         <div className='ms-1'>
           <input type="email" placeholder='Enter Email address' />
-          <button className='bg-primary  text-white'>Get Started</button>
+          <button className='bg-primary  text-white'>
+             <Link to='/register' className='bg-primary  text-white text-decoration-none'>Get Started</Link></button>
+          
         </div>
       </section>
 
