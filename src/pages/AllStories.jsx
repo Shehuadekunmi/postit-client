@@ -40,10 +40,10 @@ const AllStories = () => {
   }
 
   return (
-    <div>
+    <div className='container'>
       <Navbar t4={'Log Out'}/>
 
-      <section className=" wel d-md-flex pt-4 pt-md-5 ps-2 justify-content-evenly ps-md-5">
+      <section className="  wel d-md-flex pt-4 pt-md-5 ps-2 justify-content-evenly ps-md-5">
         <div className='ps-md-5'>
           <div ><h1 className='fw-bold pb-2'>You've got a story,</h1></div>
           <img src={post} alt="" className='pb-3' />
@@ -70,14 +70,15 @@ const AllStories = () => {
                 <div key={_id}  className=' mt-3 px-3 mb-4 all'>
                   <img src={image} alt="{image}" width={'250px'} height={'250px'} className='border border-danger' />
                   <p className='fw-bold mt-2'>{title}</p>
-                  <p>{tag}</p>
+                  <p  className={ `${
+        tag == 'lifestyle' ? 'bg-warning' : tag == 'sport' ? 'bg-danger' : tag == 'nature' ? 'bg-success' 
+        : tag == 'technology' ? 'bg-primary' : 'bg-dark'
+      } Tags` }> {tag}</p>
                   <p>By {username}</p>
-                  <p className=' pd mx-auto'>{description }</p>
+                  <p className=' pd mx-auto'> {readmore? `${description.substring(0, 5)}...` : readmore}</p>
                   
                   <p>{new Date(createdAt).toDateString()}</p>
-                  <Link to={`/single/${_id}`} className='fs-5'> <AiOutlineArrowRight/> Read More...</Link>
-                  {/* <p>{readmore? `${readmore.substring(0, 20)}...` : readmore}</p>
-                  <button onClick={toggleRead}> {readMore? 'Read More' : 'Read Less'}</button> */}
+                  <Link to={`/single/${_id}`} className='fs-5'> <AiOutlineArrowRight/>Read More</Link>
                 </div>
               )
             })

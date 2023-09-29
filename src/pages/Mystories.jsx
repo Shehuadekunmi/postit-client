@@ -38,7 +38,7 @@ const mystories = () => {
     };
   };
   return (
-    <div>
+    <div className='container'>
       <Navbar t3={<img src={nav} alt="" />} />
       <div className='d-flex justify-content-between text-center px-2 px-md-5 my-5'>
         <h1>My stories</h1>

@@ -23,7 +23,7 @@ const Welcome = () => {
     gettUser()
   }, [])
   return (
-    <div>
+    <div className='container'>
       <Navbar t3={"Logout"} />
       <section  className=" wel d-md-flex  pt-5  pt-md-5 ps-3 justify-content-evenly ps-md-5">
       <div className='ps-md-5'>

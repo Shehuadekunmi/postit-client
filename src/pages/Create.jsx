@@ -45,7 +45,7 @@ const Create = () => {
     }
   }
   return (
-    <div>
+    <div className='container'>
       <Navbar t4={'Log Out'} />
 
       <form encType='multipart/form-data' className='text-md-center create' onSubmit={handleCreate} >

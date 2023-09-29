@@ -41,10 +41,13 @@ const Singlestories = () => {
     getStory();
   }, [storyId]);
   return (
-    <div>
+    <div className='container'>
       <Navbar t4={'Log Out'}/>
     <div className="mx-2 my-3">
-      <p  className=" fs-4"> {tag}</p>
+      <p  className={  ` ${
+        tag == 'lifestyle' ? 'bg-warning' : tag == 'sport' ? 'bg-danger' : tag == 'nature' ? 'bg-success' 
+        : tag == 'technology' ? 'bg-primary' : 'bg-dark'
+      } Tags` }> {tag}</p>
       <p className="fw-bold fs-4">{title} </p>
       <p className=" fs-4">By {username}</p>
       <hr />

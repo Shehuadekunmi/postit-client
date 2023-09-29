@@ -10,7 +10,8 @@ const Footer = () => {
     <div className='footer pt-4 text-white px-2'>
         <section className="d-flex flex-wrap justify-content-center gap-lg-">
             <div className="pp">
-                <p>About <img src={postit} alt="" className='text-white' /></p>
+                {/* <p>About <img src={postit} alt="" className='text-white' /></p> */}
+                <p > About  <span className='fw-bold px-2 fs-1' >Post</span> <span className='fw-bold text-primary fs-1'>it</span></p>
                 <p className="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt id sem vel quis in turpis sit eget pellentesque. Nunc etiicies in rhoncus, rhoncus in arcu. Tincidunt neque fusce vitaenisi aliquet. que maeae tortoere necsem commodo ac.</p>
             </div >
             <div className="menu">

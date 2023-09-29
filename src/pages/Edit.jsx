@@ -49,7 +49,7 @@ const Edit = () => {
     }
   };
   return (
-    <div>
+    <div className='container'>
       <Navbar t4={'Log Out'}/>
       <form onSubmit={handleUpdate} className="py-3 text-center edit">
         <div>
@@ -78,7 +78,7 @@ const Edit = () => {
           </select>
         </div>
         <div>
-          <label htmlFor="description"></label>
+          <label htmlFor="description"> Description</label> <br />
           <textarea className="ps-2 py-2"
             name=""
             id="description"

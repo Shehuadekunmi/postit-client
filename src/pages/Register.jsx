@@ -43,7 +43,7 @@ const [username, setUserName] = useState("");
 
 
   return (
-    <div className='bg '>
+    <div className='bg container '>
      
      <div className='hei pt-4 pt-md-5'>
       <form className='text-center log  form' onSubmit={handleRegister} >

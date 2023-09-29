@@ -30,7 +30,7 @@ const Login = () => {
     }
   };
   return (
-    <div className="bg">
+    <div className="bg container">
       <div className='hei py-5'>
       <form onSubmit={handleLogin} className="text-center   py-5 log form">
       <Link to='/'> <RxCross2 className='cross'/> </Link>
